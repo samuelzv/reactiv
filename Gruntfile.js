@@ -1,5 +1,13 @@
 module.exports = function (grunt) {
     grunt.initConfig({
+        shell: {
+            options: {
+                stderr:false
+            },
+            runweb: {
+                command: 'cd /Users/szuniga/WebstormProjects/reactivo/dist/client && httpster'
+            }
+        },
         bowercopy: {
             options: {
             },
@@ -52,7 +60,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks('grunt-bowercopy');
+    grunt.loadNpmTasks('grunt-shell');
 
     grunt.registerTask("default", ["watch"]);
     grunt.registerTask("build", ["browserify"]);
+    grunt.registerTask('runweb', ["shell:runweb"])
 };
