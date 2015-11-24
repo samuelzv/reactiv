@@ -12,7 +12,8 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "react": "~0.14.3"
+  "dependencies" : {
+    "react": "~0.14.3",
+    "bootstrap": "~3.3.5"
   }
 }

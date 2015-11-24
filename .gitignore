@@ -1,4 +1,4 @@
 node_modules/
-src/client/bower_components/
+src/client/vendor/
 dist/
 .idea/

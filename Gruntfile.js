@@ -23,8 +23,8 @@ module.exports = function (grunt) {
         copy: {
             src_client: {
                 expand: true,
-                cwd: 'src/client/',
-                src: ['*.html','*.json'],
+                cwd: 'src/client',
+                src: ['*.html'],
                 dest: 'dist/client',
                 flatten: true
             }
@@ -40,13 +40,13 @@ module.exports = function (grunt) {
                     // if the source file has an extension of es6 then
                     // we change the name of the source file accordingly.
                     // The result file's extension is always .js
-                    "./dist/client/js/bundle.js": ["./src/client/js/Main.js"]
+                    "./dist/client/js/bundle.js": ["./src/client/App.js"]
                 }
             }
         },
         watch: {
             scripts: {
-                files: ["./src/client/js/**/*.js"],
+                files: ["./src/client/**/*.js"],
                 tasks: ["browserify"]
             },
             src_client: {
