@@ -18,11 +18,13 @@
   },
   "dependencies": {
     "envify": "^3.4.0",
+    "firebase": "^2.3.2",
     "grunt-contrib-copy": "^0.8.2",
     "history": "^1.13.1",
     "react": "^0.14.3",
     "react-addons-create-fragment": "^0.14.3",
     "react-dom": "^0.14.3",
-    "react-router": "^1.0.0"
+    "react-router": "^1.0.0",
+    "reactfire": "^0.5.1"
   }
 }

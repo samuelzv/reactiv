@@ -4,9 +4,9 @@ var Notes = React.createClass({
     render() {
         return (
             <div>
-                REPOS <br/>
+                Notes <br/>
                 Username: {this.props.username} <br/>
-                Bio: {this.props.bio} <br/>
+                Notes: {this.props.notes} <br/>
             </div>
         )
     }
